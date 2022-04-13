@@ -1,0 +1,6 @@
+framework module EasyUIView {
+  umbrella header "EasyUIView-umbrella.h"
+
+  export *
+  module * { export * }
+}

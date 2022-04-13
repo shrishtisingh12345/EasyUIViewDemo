@@ -1,0 +1,16 @@
+PODS:
+  - EasyUIView (1.2)
+
+DEPENDENCIES:
+  - EasyUIView
+
+SPEC REPOS:
+  trunk:
+    - EasyUIView
+
+SPEC CHECKSUMS:
+  EasyUIView: 50f6a85bf041a6a5ecc23382ea44d0ed83c39194
+
+PODFILE CHECKSUM: 8edb16273add0611a76a64b7d4fdd7f2fc5bc934
+
+COCOAPODS: 1.11.3

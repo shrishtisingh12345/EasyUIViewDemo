@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonViewSuper" customModule="EasyUIView" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="By3-ih-Djq" id="Lpz-s4-s2B"/>
+                <outlet property="buttonView" destination="iN0-l3-epB" id="uau-Xd-wbT"/>
+                <outlet property="iconImage1" destination="y4a-o4-SRb" id="NEj-M7-Vs7"/>
+                <outlet property="iconImage2" destination="h9K-Md-Ifi" id="4ZN-Nt-H0T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By3-ih-Djq">
+                    <rect key="frame" x="0.0" y="0.0" width="406" height="55"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Button">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                        <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y4a-o4-SRb" userLabel="firstImg">
+                    <rect key="frame" x="20" y="14" width="19" height="26"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h9K-Md-Ifi" userLabel="secondImg">
+                    <rect key="frame" x="367" y="14" width="19" height="26"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="ButtonViewSuper">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="By3-ih-Djq" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="BrU-hV-1LF"/>
+                <constraint firstItem="h9K-Md-Ifi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="KN0-bG-08G"/>
+                <constraint firstItem="By3-ih-Djq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T02-er-9jM"/>
+                <constraint firstItem="By3-ih-Djq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WZb-ZB-jnk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="y4a-o4-SRb" secondAttribute="bottom" constant="15" id="Z3G-PH-fZb"/>
+                <constraint firstItem="By3-ih-Djq" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZcO-nT-Qnj"/>
+                <constraint firstItem="y4a-o4-SRb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="aWB-1q-0ys"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h9K-Md-Ifi" secondAttribute="trailing" constant="20" id="eNY-3a-KKh"/>
+                <constraint firstItem="y4a-o4-SRb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="hIy-Ko-kiJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h9K-Md-Ifi" secondAttribute="bottom" constant="15" id="lXu-Pw-Tub"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="160.86956521739131" y="-242.07589285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
